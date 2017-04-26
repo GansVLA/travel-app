@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <!-- Your app title -->
+    <title>Turismo izucar</title>
+
+    <!-- This template defaults to the iOS CSS theme. To support both iOS and material design themes, see the Framework7 Tutorial at the link below:
+        http://www.idangero.us/framework7/tutorials/maintain-both-ios-and-material-themes-in-single-app.html
+     -->
+
+    <link rel="stylesheet" href="lib/framework7/css/framework7.material.min.css">
+    <link rel="stylesheet" href="lib/framework7/css/framework7.material.colors.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Status bar overlay for full screen mode (PhoneGap) -->
+    <div class="statusbar-overlay"></div>
+
+    <!-- Panels overlay-->
+    <div class="panel-overlay"></div>
+    <!-- Left panel with reveal effect-->
+    <div class="panel panel-left panel-cover layout-dark">
+       <div style="background: #fff; border-bottom: 8px solid #EA2E49">
+        <center>
+            <br>
+                <img src="img/image.png" width="65%">
+                <h3 align="center" class="color-gray">Turismo Izúcar</h3>
+                
+        </center>
+       </div>
+        <div class="list-block">
+            <ul>
+                <li class="item-content">
+                     <div class="item-media">
+                       <i class="icon icon-f7"></i>
+                     </div>
+                     <div class="item-inner">
+                         <div class="item-title">Inicio</div>
+                     </div>
+                </li>
+                <li class="item-content">
+                     <div class="item-media">
+                       <i class="icon icon-f7"></i>
+                     </div>
+                     <div class="item-inner">
+                         <div class="item-title">Qué visitar</div>
+                     </div>
+                </li>
+                <li class="item-content">
+                     <div class="item-media">
+                       <i class="icon icon-f7"></i>
+                     </div>
+                     <div class="item-inner">
+                         <div class="item-title">Qué hacer</div>
+                     </div>
+                </li>
+                <li class="item-content">
+                     <div class="item-media">
+                       <i class="icon icon-f7"></i>
+                     </div>
+                     <div class="item-inner">
+                         <div class="item-title">Dónde comer</div>
+                     </div>
+                </li>
+                <li class="item-content">
+                     <div class="item-media">
+                       <i class="icon icon-f7"></i>
+                     </div>
+                     <div class="item-inner">
+                         <div class="item-title">Dónde descansar</div>
+                     </div>
+                </li>
+                <li class="item-content">
+                     <div class="item-media">
+                       <i class="icon icon-f7"></i>
+                     </div>
+                     <div class="item-inner">
+                         <div class="item-title">Vida nocturna</div>
+                     </div>
+                </li>
+                <li class="item-content">
+                     <div class="item-media">
+                       <i class="icon icon-f7"></i>
+                     </div>
+                     <div class="item-inner">
+                         <div class="item-title">Servicios</div>
+                     </div>
+                </li>
+                <li class="item-content">
+                     <div class="item-media">
+                       <i class="icon icon-f7"></i>
+                     </div>
+                     <div class="item-inner">
+                         <div class="item-title">Emergencias</div>
+                     </div>
+                </li>
+                <li class="item-content">
+                     <div class="item-media">
+                       <i class="icon icon-f7"></i>
+                     </div>
+                     <div class="item-inner">
+                         <div class="item-title">Clima</div>
+                     </div>
+                </li>
+            </ul>
+            
+        </div>
+    </div>
+
+    <!-- Views -->
+    <div class="views">
+        <!-- Your main view, should have "view-main" class -->
+        <div class="view view-main">
+            <!-- Top Navbar-->
+           <div class="navbar theme-white">
+                <div class="navbar-inner">
+            <!-- We have home navbar without left link-->
+                    <div class="left">
+              <!-- Right link contains only icon - additional "icon-only" class-->
+                        <a href="#" class="link icon-only open-panel"> <i class="icon icon-bars color-black"></i></a>
+                    </div>
+               
+                    <div class="center sliding color-black">Turismo Izúcar</div>
+                    <div class="right">
+                        <a href="search.html" class="external"><i class="material-icons color-black">search</i></a> <a href="#" class="create-popup"><i class="material-icons color-black">more_vert</i></a>  
+                    </div>
+                </div>
+            </div>
+        <div class="page-content">
+<br><br><br>
+        
+            <div class="card demo-card-header-pic">
+              <div style="background-image:url(images/visitar.jpg)" valign="bottom" class="card-header color-white no-border"></div>
+
+                <div class="card-footer">
+                    <a href="#" class="link dissable"></a>
+                    <a href="visitar.html" class="link ripple external">Ver más</a>
+                </div>
+          
+            </div>
+            <div class="card demo-card-header-pic col-45">
+              <div style="background-image:url(images/hacer.jpg)" valign="bottom" class="card-header color-white no-border"></div>
+
+                <div class="card-footer">
+                    <a href="#" class="link dissable"></a>
+                    <a href="#" class="link ripple">Ver más</a>
+                </div>
+          
+            </div>
+                <div class="card demo-card-header-pic">
+              <div style="background-image:url(images/comida.jpg)" valign="bottom" class="card-header color-white no-border"></div>
+
+                <div class="card-footer">
+                    <a href="#" class="link dissable"></a>
+                    <a href="#" class="link ripple">Ver más</a>
+                </div>
+          
+            </div>
+             <div class="card demo-card-header-pic">
+              <div style="background-image:url(images/vida.jpg)" valign="bottom" class="card-header color-white no-border"></div>
+
+                <div class="card-footer">
+                    <a href="#" class="link dissable"></a>
+                    <a href="#" class="link ripple">Ver más</a>
+                </div>
+          
+            </div>
+           <div class="card demo-card-header-pic">
+              <div style="background-image:url(images/descanso.jpg)" valign="bottom" class="card-header color-white no-border"></div>
+
+                <div class="card-footer">
+                    <a href="#" class="link dissable"></a>
+                    <a href="hotel.html" class="link ripple external">Ver más</a>
+                </div>
+          
+            </div>
+             <div class="card demo-card-header-pic">
+              <div style="background-image:url(images/servi.jpg)" valign="bottom" class="card-header color-white no-border"></div>
+
+                <div class="card-footer">
+                    <a href="#" class="link dissable"></a>
+                    <a href="#" class="link ripple">Ver más</a>
+                </div>
+          
+            </div>
+             <div class="card demo-card-header-pic">
+              <div style="background-image:url(images/clima.jpg)" valign="bottom" class="card-header color-white no-border"></div>
+
+                <div class="card-footer">
+                    <a href="#" class="link dissable"></a>
+                    <a href="#" class="link popup-weather">Consultar clima</a>
+                </div>
+
+
+         </div>
+        
+               <p class="copyright" align="center">Turismo Izúcar | 2017 ©</p>
+              </div>
+         
+        </div>
+    </div>
+    
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
+    <script type="text/javascript" src="js/init.js"></script>
+</body>
+
+</html>

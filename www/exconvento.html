@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <!-- Your app title -->
+    <title>Turismo izucar</title>
+
+    <!-- This template defaults to the iOS CSS theme. To support both iOS and material design themes, see the Framework7 Tutorial at the link below:
+        http://www.idangero.us/framework7/tutorials/maintain-both-ios-and-material-themes-in-single-app.html
+     -->
+
+    <link rel="stylesheet" href="lib/framework7/css/framework7.material.min.css">
+    <link rel="stylesheet" href="lib/framework7/css/framework7.material.colors.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+  <body >
+    <!-- Status bar overlay for fullscreen mode-->
+    <div class="statusbar-overlay"></div>
+      <div class="panel-overlay"></div>
+      <div class="panel panel-left panel-cover">
+      <img src="images/portada.jpg" width="100%">
+        <div class="list-block" style="margin-top: -5px;">
+  <ul >
+    <li>
+      <a href="index.html" class="item-link item-content external">
+         <div><img src="images/home-button.svg" width="25px"></div>
+            <div class="item-inner">
+               <div class="item-title-row">
+                 <div class="item-title" style="padding-left:30px">Inicio</div>
+               </div>
+             </div>
+      </a>
+    </li>
+    <li>
+      <a href="#" class="item-link item-content external">
+         <div><img src="images/visit.svg" width="25px"></div>
+            <div class="item-inner">
+               <div class="item-title-row">
+                 <div class="item-title" style="padding-left:30px">Qué visitar</div>
+               </div>
+             </div>
+      </a>
+    </li>
+    <li>
+      <a href="#" class="item-link item-content external">
+         <div><img src="images/park.svg" width="25px"></div>
+            <div class="item-inner">
+               <div class="item-title-row">
+                 <div class="item-title" style="padding-left:30px">Qué hacer</div>
+               </div>
+             </div>
+      </a>
+    </li>
+    <li>
+      <a href="#" class="item-link item-content external">
+         <div><img src="images/food.svg" width="25px"></div>
+            <div class="item-inner">
+               <div class="item-title-row">
+                 <div class="item-title" style="padding-left:30px">Dónde comer</div>
+               </div>
+             </div>
+      </a>
+    </li>
+    
+
+
+    <li>
+      <a href="#" class="item-link item-content external">
+        <div><img src="images/disco-ball.svg" width="25px"></div>
+         <div class="item-inner">
+          <div class="item-title-row">
+           <div class="item-title" style="padding-left:30px">Vida nocturna</div>
+          </div>
+       </div>
+      </a>
+    </li>
+    <li>
+      <a href="hotel.html" class="item-link item-content external">
+       <div><img src="images/hotel.svg" width="25px"></div>
+        <div class="item-inner">
+         <div class="item-title-row">
+            <div class="item-title" style="padding-left:30px">Dónde descansar</div>
+         </div>
+        </div>
+      </a>
+    </li>
+    <li>
+      <a href="#" class="item-link item-content external">
+        <div><img src="images/car-mechanic.svg" width="25px"></div>
+         <div class="item-inner">
+           <div class="item-title-row">
+            <div class="item-title" style="padding-left:30px">Servicios</div>
+           </div>
+         </div>
+      </a>
+    </li>
+      <li>
+      <a href="sos.html" class="item-link item-content external">
+        <div><img src="images/emergencia.svg" width="25px"></div>
+         <div class="item-inner">
+           <div class="item-title-row">
+            <div class="item-title" style="padding-left:30px">Emergencias</div>
+           </div>
+         </div>
+      </a>
+    </li>
+  <li>
+      <a href="#" class="item-link item-content popup-weather">
+        <div><img src="images/clima.svg" width="25px"></div>
+         <div class="item-inner">
+           <div class="item-title-row">
+            <div class="item-title" style="padding-left:30px">Clima</div>
+           </div>
+         </div>
+      </a>
+    </li>
+    
+  </ul>
+
+</div>
+    
+      </div>
+
+  
+    <!-- Views-->
+    <div class="views">
+      <!-- Your main view, should have "view-main" class-->
+      <div class="view view-main">
+        <!-- Top Navbar-->
+        <div class="navbar theme-white">
+          <div class="navbar-inner">
+            <!-- We have home navbar without left link-->
+        <div class="left">
+              <a href="javascript:history.back()" class="link icon-only"><i class="icon icon-back color-black"></i></a>
+              
+          </div>
+               
+            <div class="center sliding color-black">Turismo Izúcar</div>
+            <div class="right">
+                <a href="search.html" class="external"><i class="material-icons color-black">search</i></a>  <a href="#" class="create-popup"><i class="material-icons color-black">more_vert</i></a>  
+                </div>
+          </div>
+        </div>
+        <!-- Pages, because we need fixed-through navbar and toolbar, it has additional appropriate classes-->
+        <div class="pages navbar-through toolbar-through">
+          <!-- Page, data-page contains page name-->
+          <div data-page="index" class="page">
+            <!-- Scrollable page content-->
+            <div class="page-content">
+<br><br>
+
+
+                 <!-- Slider container -->
+              <div class="swiper-container swiper-init" data-speed="400" data-space-between="40" data-pagination=".swiper-pagination">
+                 <!-- Slides wrapper -->
+                  <div class="swiper-wrapper">
+                      <!-- Slides -->
+                     <div class="swiper-slide"><img src="./images/sto-dom-04.jpg" width="100%"></div>
+                     <div class="swiper-slide"><img src="./images/sto-dom-02.jpg" width="100%"></div>
+                      <div class="swiper-slide"><img src="./images/sto-dom-03.jpg" width="100%"></div>
+                      <div class="swiper-slide"><img src="./images/sto-dom.jpg" width="100%"></div>
+      
+                  </div>
+                 <!-- Pagination, if required -->
+                  <div class="swiper-pagination"></div>
+              </div>
+              
+              <center>
+                <p class="title-p">Ex-Convento de Santo Domingo de Guzmán</p>
+                
+              </center>
+            
+              
+    <!-- Each "cell" has col-[widht in percents] class -->
+                 <div class="center">
+                  <center>
+                    <i class="material-icons color-gray icons-d">camera_alt</i>
+                    <p align="center"></p>
+                  </center>
+                 </div>
+                 
+              
+              <div class="content-block">
+                  <p align="justify">
+                      En este Ex-Convento Dominico, se realizan recorridos guiados que se llevan a cabo 1er y 3er sábado de cada mes con un horario de 12 p.m. a 2 p.m.
+                        <br><br>
+                      <b>Expositor:</b> Arqueólogo Raúl Martínez<br><i class="color-gray">Cronista Municipal de Izúcar</i>
+                  </p>
+                  
+              </div>
+
+              <div class="website"><a class="external" href="http://historiadeizucardematamoros.blogspot.mx/" target="_blank">
+              <p align="center">Blog | Historia de Izúcar de Matamoros</p>
+             </a></div>
+            
+              <p class="copyright" align="center">Turismo Izúcar | 2017 ©</p>
+            
+             <br><br>
+
+          
+            </div>
+          </div>
+        </div>
+        <!-- Bottom Toolbar-->
+        <div class="toolbar theme-black">
+          <div class="toolbar-inner"><a href="https://www.google.com.mx/maps/place/Ex-Convento+De+Santo+Domingo+De+Guzman/@18.5990926,-98.4667162,17z/data=!3m1!4b1!4m5!3m4!1s0x85cf00137c2ad49f:0xca6d8a057cae94c2!8m2!3d18.5990875!4d-98.4645275?hl=es-419" class="link external" target="_blank">Cómo Llegar </a><a href="#" class="leer-articulo link" target="_blank">Historia</a></div>
+        </div>
+      </div>
+    </div>
+    <!-- Path to Framework7 Library JS-->
+      <script type="text/javascript" src="js/cordova.js"></script>s
+    <script type="text/javascript" src="js/framework7.min.js"></script>
+    <!-- Path to your app js-->
+    <script type="text/javascript" src="js/init.js"></script>
+  </body>
+</html>

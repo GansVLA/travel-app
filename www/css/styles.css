@@ -1,0 +1,146 @@
+/*
+   statusbar-overlay sets the background color for the overlay. Black text is the default when the statusbar plugin is not added. When the
+   statusbar plugin is added, it also adds default setting to make the content white via:
+
+       <preference name="StatusBarStyle" value="lightcontent"/>
+
+   Setting the background color to black will allow the default light content (white text/icons) to show on it. The statusbar plugin is included
+   in the config.xml file and will be added by the CLI when you build locally.
+
+   See https://github.com/apache/cordova-plugin-statusbar
+*/
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Material Icons'), local('MaterialIcons-Regular'), url(https://fonts.gstatic.com/s/materialicons/v22/2fcrYFNaTjcS6g4U3t-Y5ZjZjT5FdEJ140U2DJYC3mY.woff2) format('woff2');
+}
+/* Default Status bar background */
+.statusbar-overlay {
+    background: #fefefe;
+    /* We can add transition for smooth color animation */
+    -webkit-transition: 400ms;
+    transition: 400ms;
+}
+ 
+/* Change Status bar background when panel opened */
+body.with-panel-left-cover .statusbar-overlay {
+    background: #222;
+}   
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+.demo-card-header-pic .card-header {
+    height: 40vw;
+    background-size: cover;
+    background-position: center;
+  }
+
+ *{
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+
+.theme-blue-gans{
+    background: #018da6;
+}
+
+.popup{
+    text-align: justify;
+}
+
+.title-p{
+	font-weight: lighter;
+	font-size: 24px;
+}
+.icons-d{
+
+	font-size: 60PX;
+}
+.menu-title{
+	background: #333;
+	color: #fff;
+}
+.website{
+	background-color: #fff;
+	padding: 1px;
+	border: 2px solid #00bcd4;
+	border-radius: 5px;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+.website a{
+	color: #00bcd4;
+
+	font-size: 15px;
+}
+.copyright{
+	color: #e0e0e0;
+	}
+
+.abierto{
+	color: #27DB9F;
+	font-weight: bold;
+	font-size: 18px;
+	text-decoration: underline;
+}
+.demo-card-header-pic .card-header {
+    height: 45vw;
+    background-size: cover;
+    background-position: center;
+  }
+ .card-header{
+ 	
+ 	text-shadow: 2px 2px rgba(0,0,0,.8);
+
+ }
+ .theme-new{
+ 	background: #2A2C2B  url('../images/weather-background.jpg');
+ 	 background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    background-size: 100% 100%;
+ }
+ /*.navbar-inner{
+ 	box-shadow: 2px 3px rgba(0,0,0,.1);
+ }*/
+ .mod{
+ 	background: #FFF;
+ 	border: 2px solid #374140;
+ 	border-radius: 5px;
+ 	color: #2A2C2B;
+ 	padding-bottom: 10px;
+ 	padding-top: 10px;
+ 	padding-right: 40%;
+ 	padding-left: 40%;
+ }
+.mod-01{
+    background: #2A2C2B;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    padding-bottom: 10px;
+ 	padding-top: 10px;
+ 	padding-right: 40%;
+ 	padding-left: 40%;
+    
+}
+
+
+
+.bold{
+    font-weight: bold;
+}
